@@ -1,0 +1,292 @@
+﻿@model AppSec.Models.Users
+@{
+    ViewData["Title"] = "My Profile";
+    ViewBag.Title = "My Profile";
+}
+<div class="container-fluid" style="">
+    <div class="d-sm-flex  justify-content-between mb-4 mt-2 ml-3">
+        <h1 class="h3 mb-0 text-gray-800">My Profile</h1>@User.Identity.Name
+    </div>
+    <div class="card ">
+        <div class="card-body" id="content" style="background: #f8f9fa ; border: 1px solid #eeefef;">
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                </div>
+                <div class="panel-body">
+                    <form method="post" action="">
+                        <div class="col-sm-9 p-0 m-0">
+
+                        @{ 
+                                if (!String.IsNullOrEmpty(ViewData["errorMsg"].ToString()))
+                                {
+                                    if (ViewData["errorMsg"].ToString() == "-NA-")
+                                    {
+                                        <div class="alert alert-success" role="alert">
+                                            Profile updated successfully
+                                        </div> 
+                                    }else{
+                                        <div class="alert alert-warning" role="alert">
+                                            @ViewData["errorMsg"].ToString()
+                                        </div> 
+                                    }
+                                } 
+                        }
+                            <div class="row mt-3">
+                                <div class="col-sm-6">
+                                    <div class="form-group ">
+                                        <label for="MobileNumber" class="control-label col-sm-4 float-left">Profile Photo</label>
+
+                                        <img width="150px" class="img-circle img-thumbnail float-left" src="@ViewBag.ImageDataUrl" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+
+                                <div class="col-sm-6">
+                                    <div class="form-group ">
+                                        <label for="FirstName" class="control-label col-sm-4 float-left">First Name </label>
+                                        <input type="text" name="FirstName" maxlength="70" class="form-control  col-sm-8 float-left" disabled placeholder="First Name" value="@Model.FirstName" />
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <div class="form-group ">
+                                        <label for="LastName" class="control-label col-sm-4 float-left">Last Name</label>
+                                        <input type="text" name="LastName" maxlength="70" class="form-control  col-sm-8 float-left" disabled placeholder="Last Name" value="@Model.LastName" />
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-sm-6">
+                                    <div class="form-group ">
+                                        <label for="MobileNumber" class="control-label col-sm-4 float-left">Mobile Number</label>
+                                        <input type="text" name="MobileNumber" maxlength="12" class="form-control  col-sm-8 float-left" disabled placeholder="Mobile Number" value="@Model.MobileNumber" />
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group ">
+                                        <label for="Email" class="control-label col-sm-4 float-left">Email</label>
+                                        <input title="You can not change this email / username, contact support for change your email" type="email" disabled name="Email" placeholder="Email" maxlength="250" class="  col-sm-8 float-left form-control" required value="@Model.Email" />
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="row mt-3">
+
+                                <div class="col-sm-6">
+                                    <div class="form-group ">
+                                        <label for="Email" class="control-label col-sm-4 float-left">DOB</label>
+                                        <input type="date" disabled name="Email" placeholder="Email" maxlength="250" class="  col-sm-8 float-left form-control" required value="@Model.DOB?.ToString("yyyy-MM-dd")" />
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row mt-3">
+                                <div class="col-sm-6">
+                                    <div class="form-group ">
+                                        <label for="MobileNumber" class="control-label col-sm-4 float-left">Card Number</label>
+                                        <input type="text" name="MobileNumber" maxlength="12" class="form-control  col-sm-8 float-left" disabled placeholder="Mobile Number" value="@Model.CardNumber" />
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group ">
+                                        <label for="Email" class="control-label col-sm-4 float-left">Card Expiry Date</label>
+                                        <input type="email" name="Email" placeholder="Email" maxlength="250" class="  col-sm-8 float-left form-control" disabled required value="@Model.CardExpiryDate" />
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row mt-3">
+                                <div class="col-sm-6">
+                                    <div class="form-group ">
+                                        <label for="MobileNumber" class="control-label col-sm-4 float-left">Card CVV</label>
+                                        <input type="text" name="MobileNumber" maxlength="12" class="form-control  col-sm-8 float-left" placeholder="Mobile Number" disabled value="@Model.CardCVV" />
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group ">
+                                        <label for="Email" class="control-label col-sm-4 float-left">Name on card</label>
+                                        <input type="text" name="Email" placeholder="Email" maxlength="250" class="  col-sm-8 float-left form-control" disabled  value="@Model.NameOnCard" />
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+                            @* <div class="row mt-5 ml-0 mb-3">
+            <div class="col-sm-12">
+                <input type="submit" value="Update" class="btn btn-primary mr-2 float-left" />
+            </div>
+        </div>*@
+                        </div>
+                    </form>
+                    <hr />
+
+
+
+
+                    <div class="col-sm-9 p-0 m-0">
+
+                        <div class="row mt-3">
+                            <div class="col-sm-6">
+                                <div class="form-group ">
+                                    <h5 class="pl-3 mt-3"> Password Update</h5>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        @{if (String.IsNullOrEmpty(ViewData["password_change"].ToString()))
+                                    {
+                                        @ViewData["Msg"].ToString()
+
+
+                        <div class="row mt-3">
+                            <div class="col-sm-6">
+                                <div class="form-group ">
+                                    <label for="CurrentPassword" class="control-label col-sm-4 float-left">Current Password</label>
+                                    <input type="password" id="pwds"  name="CurrentPassword" class="form-control col-sm-8 float-left CurrentPassword" placeholder="Current Password" value="" />
+                                </div>
+                            </div>
+                        </div><div class="row mt-3">
+                            <div class="col-sm-6">
+                                <div class="form-group ">
+                                    <label for="NewPassword" class="control-label col-sm-4 float-left">New Password</label>
+                                    <input type="password" id="pwds" name="NewPassword" placeholder="New Password" class="  col-sm-8 float-left form-control NewPassword" required /> 
+                                </div>
+                            </div>
+                        </div><div class="row mt-3">
+                            <div class="col-sm-6">
+
+                                <div class="form-group ">
+                                    <label for="Email" class="control-label col-sm-4 float-left">Confirm Password</label>
+                                    <input type="password" id="pwds"  name="ConfirmPassword" placeholder="Confirm Password" class="col-sm-8 float-left form-control ConfirmPassword" required />
+                                </div>
+
+                            </div>
+                            
+
+
+                        </div><div class="text-danger pl-2 pt-3 FormErrMsg"></div><div class="row mt-3">
+                                <div class="col-sm-6">
+                                    <div class="col-sm-12">
+                                        <input type="submit" onclick="submitForm()" value="Change Password" class="btn btn-primary mr-2 float-left" />
+                                    </div>
+                                </div>
+                            </div>
+                            }
+                            else { 
+                                <div class="text-danger">@ViewData["password_change"]</div>
+                            }
+
+                        }
+
+
+
+
+
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+
+        </div>
+    </div>
+</div>
+<script>
+   
+    function validatePassword(password) {
+        var upper = 0, lower = 0, number = 0, special = 0;
+        for (var i = 0; i < password.length; i++) {
+            if (password[i] >= "A" && password[i] <= "Z") upper++;
+            else if (password[i] >= "a" && password[i] <= "z") lower++;
+            else if (password[i] >= "0" && password[i] <= "9") number++;
+            else special++;
+        }
+        if (upper < 2 || lower < 2 || number < 2 || special < 1) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    function submitForm() {
+        var CurrentPassword = $(".CurrentPassword").val();
+        var NewPassword = $(".NewPassword").val();
+        var ConfirmPassword = $(".ConfirmPassword").val();
+        
+        var condition = false;
+
+        if (CurrentPassword.trim() === "") {
+            $(".CurrentPassword").focus();
+            $(".FormErrMsg").html("Current password is required."); condition = false;
+        } else if (NewPassword.trim() === "") {
+            $(".NewPassword").focus();
+            $(".FormErrMsg").html("New password required"); condition = false;
+        } else if (ConfirmPassword.trim() === "") {
+            $(".ConfirmPassword").focus();
+            $(".FormErrMsg").html("Confirm password required"); condition = false;
+        } else if (ConfirmPassword.length < 12) {
+            $(".NewPassword").focus();
+            $(".FormErrMsg").html("Password min length 12 required"); condition = false;
+        }
+        else if (ConfirmPassword !== NewPassword) {
+            $(".ConfirmPassword").focus();
+
+            $(".FormErrMsg").html("Passwords not equal"); condition = false;
+        } else if (CurrentPassword == NewPassword) {
+            $(".CurrentPassword").focus();
+            $(".FormErrMsg").html("You cant set your old password"); condition = false;
+        } else if (validatePassword(NewPassword)) {
+            $(".ConfirmPassword").focus();
+            $(".FormErrMsg").html("Strong password required{ Must contains 2 upper and  2 lower case and  2 number and atleast one special character}"); condition = false;
+        } else {
+            $(".FormErrMsg").html("");
+            condition = true;
+        }
+
+        if (condition) {
+            var userDetails = new FormData();
+            userDetails.append("CurrentPassword", CurrentPassword);
+            userDetails.append("NewPassword", NewPassword);
+            userDetails.append("ConfirmPassword", ConfirmPassword);
+            $.ajax({
+                type: "POST",
+                url: "../User/UpdatePassword",
+                processData: false,
+                contentType: false,
+                data: userDetails,
+                success: function (resultData) {
+                    if (resultData.status) {
+                        alert(resultData.message);
+                        window.location.reload();
+                    }else {
+                        alert(resultData.message);
+                    }
+                }
+            });
+        }
+
+    }
+
+</script>

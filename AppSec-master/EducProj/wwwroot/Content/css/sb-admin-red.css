@@ -1,0 +1,1227 @@
+﻿.ui-dialog-titlebar-close {
+    visibility: hidden;
+}
+
+.ui-timepicker-div .ui-widget-header {
+    margin-bottom: 8px;
+}
+
+.ui-timepicker-div dl {
+    text-align: left;
+}
+
+    .ui-timepicker-div dl dt {
+        height: 25px;
+    }
+
+    .ui-timepicker-div dl dd {
+        margin: -25px 0 10px 65px;
+    }
+
+.ui-timepicker-div td {
+    font-size: 90%;
+}
+
+
+
+.ui-datepicker {
+    font-size: 12px;
+}
+
+.ui-widget-header {
+    border: 1px solid #DA2929;
+    background: #EE2323 50% 50% repeat-x !important;
+    color: #FFFFFF;
+    font-weight: normal !important;
+}
+
+.ui-widget {
+    font-family: Times New Romain !important;
+    font-size: 14px !important;
+}
+
+.content-module-main .not_mentioned {
+    color: rgb(230, 130, 3);
+}
+
+.ui-tooltip {
+    background-color: yellow !important;
+    font-size: 10px !important;
+    color: black !important;
+    border: 1px solid black !important;
+    overflow: hidden !important;
+    padding: 2px !important;
+    /* for IE */
+    filter: alpha(opacity=80);
+    /* CSS3 standard */
+}
+
+.ui-dialog-titlebar {
+    display: none;
+}
+
+.pop_up_box {
+    font-size: 14px;
+}
+
+table th {
+    background-color: #5d6677;
+    color: wheat;
+    text-transform: uppercase;
+    padding: 1.25em 0 1.25em 1.25em;
+    border-left: 1px solid #747c8a;
+}
+
+table {
+    line-height: 28px;
+    text-align: center;
+}
+
+.gray {
+    color: gray;
+}
+
+.job_details_label {
+    color: rgb(56, 7, 117);
+    float: left;
+    width: 45%;
+    text-align: left
+}
+
+.job_details_value {
+    color: rgb(173, 0, 0);
+    float: left;
+    width: 55%;
+    text-align: left
+}
+
+.form_profiles input[type="text"] {
+    float: right;
+}
+
+.form_profiles .cf {
+    height: 15px;
+}
+
+.form_profiles {
+    width: 550px;
+    line-height: 31px;
+}
+
+    .form_profiles textarea {
+        float: right;
+    }
+
+    .form_profiles .red {
+        color: red;
+    }
+
+    .form_profiles .cf {
+        height: 10px;
+    }
+
+/* ---------- RESET ---------- */
+/* ---------- Based upon 'reset.css' in the 
+Yahoo! User Interface Library: 
+http://developer.yahoo.com/yui ---------- */
+*, html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4,
+h5, h6, pre, form, label, fieldset, input, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    width: 871px;
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(182, 155, 155, 0.75), rgba(0,0,0,0));
+    background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    margin: 18px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.content-module-main .formNewLead {
+    width: 500px;
+    margin: 28px;
+}
+
+.profile_list_table {
+    line-height: 32px;
+    border-radius: 7px;
+}
+
+    .profile_list_table tr {
+        border-top: 1px solid #fe9b9b;
+        border-left: 1px solid #fe9b9b;
+        border-right: 1px solid #fe9b9b;
+        border-bottom: 1px solid #fe9b9b;
+        text-align: left;
+        font-size: 12px;
+    }
+
+table tbody tr:nth-child(odd) {
+    background-color: #f8f9fa;
+}
+
+.profile_list_table th {
+    font-weight: bold;
+    background-color: #FFF5F5;
+    text-align: center;
+    height: 24px;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+caption, th {
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+q:before, q:after {
+    content: '';
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+a img {
+    border: none;
+}
+/* Gets rid of IE's blue borders */
+
+a {
+    text-decoration: none;
+}
+
+
+body {
+    font-size: 16px; /* Prevents an IE bug where em's scale out of proportion */
+}
+
+
+
+
+
+/* ---------- CLEARFIX ---------- */
+/* For modern browsers */
+.cf:before,
+.cf:after {
+    content: "";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
+    zoom: 1;
+}
+
+
+.pagenav_list {
+    float: right;
+    padding: 10px 10px 10px 0;
+}
+
+    .pagenav_list span {
+        font-size: 12px;
+    }
+
+    .pagenav_list a {
+        font-size: 12px;
+        text-decoration: none;
+    }
+
+        .pagenav_list a:hover {
+            text-decoration: underline;
+        }
+
+    .pagenav_list.top_pagenav {
+        padding: 0px 10px 5px 0;
+        margin-top: -10px;
+    }
+
+
+/* ---------- GENERAL ---------- */
+.round {
+    border-radius: 0.3125em; /* 5/16 */
+    -moz-border-radius: 0.3125em; /* 5/16 */
+    -webkit-border-radius: 0.3125em; /* 5/16 */
+}
+
+p {
+    margin-bottom: 1.25em; /* 20/16 */
+    color: #9498a1;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.cb {
+    clear: both;
+}
+
+.half-size-column {
+    width: 48%;
+}
+
+div.stripe-separator {
+    background: transparent url('../images/separator-bg.png') repeat-x left center;
+    height: 0.562em; /* 9/16 */
+    display: block;
+    margin: 1.25em 0; /* 20/16 */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.625em; /* 10/16 */
+}
+
+/*Temporary styles*/
+ul.temporary-button-showcase {
+    list-style-type: none;
+}
+
+    ul.temporary-button-showcase li {
+        width: 24%;
+        float: left;
+        margin-bottom: 1em;
+    }
+
+code {
+    display: inline-block;
+    background-color: #f8f9fa;
+    border: 1px solid #eeefef;
+    padding: 0.416em 0.833em; /* 5/12 10/12 */
+    color: #2a2e36;
+}
+
+blockquote {
+    display: block;
+    font-style: italic;
+    border-left: 2px solid #eeefef;
+    padding-left: 0.833em; /* 10/12 */
+    color: #9498a1;
+}
+
+cite {
+    font-style: italic;
+    font-weight: bold;
+    display: block;
+    padding-left: 0.833em; /* 10/12 */
+    margin-top: 0.833em; /* 10/12 */
+    color: #9498a1;
+}
+
+
+
+
+
+
+/* ---------- TYPOGRAPHY ---------- */
+body, form {
+    line-height: 1.125em; /* 18/16 */
+}
+
+    p, .button, form input, ul#nav li ul, ul#tabs, div.side-menu ul li a, table,
+    .information-box, .confirmation-box, .error-box, .warning-box, ol, .regular-ul,
+    .custom-ul, blockquote, cite {
+        font-size: 0.75em; /* 12/16 */
+    }
+
+div.content-module-heading span {
+    font-size: 0.625em; /* 10/16 */
+}
+
+form p input[type="text"], form p input[type="password"], form p input[type="checkbox"], form p input[type="radio"] {
+    font-size: 1em; /* 12/12. I did 12 because they're contained within a P tag, that has font size of 12px*/
+}
+
+h1 {
+    font-size: 1.125em; /* 18/16 */
+}
+
+h2 {
+    font-size: 0.875em; /* 14/16 */
+}
+
+h3 {
+    font-size: 0.75em; /* 12/16 */
+}
+
+h4 {
+    font-size: 0.685em; /* 11/16 */
+}
+
+h5 {
+    font-size: 0.625em; /* 10/16 */
+}
+
+
+
+
+
+/* ---------- COLORS ---------- */
+a {
+    color: #FF3F77;
+}
+
+    a:hover {
+        color: gray;
+        /*color: #2069b4;  */
+    }
+
+p a, p a:hover {
+    border-bottom: 1px dotted;
+}
+
+.blue {
+    background-color: #01d8da;
+    color: white;
+}
+
+    .blue:hover {
+        background-color: teal;
+        color: white;
+    }
+
+
+
+
+
+/* ---------- WIDTHS ---------- */
+/* Form Inputs Style */
+.default-width-input {
+    width: 20.833em; /* Default Value. Equals 250px for the 12px font size */
+}
+
+.full-width-input {
+    width: 95%;
+}
+
+/* Textarea Style */
+.full-width-textarea {
+    width: 95%;
+    height: 12.5em; /* 150/12 */
+}
+
+/* Page Container Style */
+.page-full-width {
+    padding: 0 1.875em; /* 30/16 */
+}
+
+.page-limited {
+    width: 60em; /* 960/16 */
+    margin: 0 auto;
+}
+
+
+
+
+
+/* ---------- BUTTONS ---------- */
+.button {
+    padding: 0.833em; /* 10/12 */
+    display: inline-block;
+    text-decoration: none;
+    background-repeat: no-repeat;
+}
+
+.dark {
+    background-color: #3f4551;
+    color: white;
+}
+
+    .dark:hover {
+        background-color: #5d6677;
+        color: white;
+    }
+
+.text-upper {
+    text-transform: uppercase;
+}
+
+.small-button {
+    padding: 0.312em 1em; /* 5/16 16/16 */
+}
+
+.image-left {
+    background-position: 0.833em center; /* 10/12 */
+    padding-left: 3em; /* 36/12 */
+}
+
+.image-right {
+    background-position: right center;
+    padding-right: 3em; /* 36/12 */
+}
+
+.ic-choose_pacakage {
+    background-image: url("../images/icons/choose_package.png");
+}
+
+.ic-table-activate_icon {
+    background-image: url("../images/icons/activate_icon.png");
+}
+
+.ic-table-view_package_ico {
+    background-image: url("../images/icons/view_package_ico.png");
+}
+
+.ic-table-active_reset {
+    background-image: url("../images/icons/active_reset.png");
+}
+
+
+
+.ic-left-arrow {
+    background-image: url("../images/icons/ic_left.png");
+}
+
+.ic-right-arrow {
+    background-image: url("/images/icons/ic_right.png");
+}
+
+.ic-print {
+    background-image: url("../images/icons/ic_print.png");
+}
+
+.ic-cancel {
+    background-image: url("../images/icons/ic_cancel.png");
+}
+
+.ic-delete {
+    background-image: url("../images/icons/ic_delete.png");
+}
+
+.ic-delete {
+    background-image: url("../images/icons/ic_delete.png");
+}
+
+.ic-add {
+    background-image: url("../images/icons/ic_add.png");
+}
+
+.ic-download {
+    background-image: url("../images/icons/ic_download.png");
+}
+
+.ic-edit {
+    background-image: url("../images/icons/ic_edit.png");
+}
+
+.ic-favorite {
+    background-image: url("../images/icons/ic_favorite.png");
+}
+
+.ic-lock {
+    background-image: url("../images/icons/ic_lock.png");
+}
+
+.ic-power {
+    background-image: url("../images/icons/ic_power.png");
+}
+
+.ic-refresh {
+    background-image: url("../images/icons/ic_refresh.png");
+}
+
+.ic-settings {
+    background-image: url("../images/icons/ic_settings.png");
+}
+
+.ic-upload {
+    background-image: url("../images/icons/ic_upload.png");
+}
+
+.ic-search {
+    background-image: url("../images/icons/ic_zoom.png");
+}
+
+.ic-table-edit {
+    background-image: url("../images/icons/table/actions-edit.png");
+}
+
+.ic-table-delete {
+    background-image: url("../images/icons/table/actions-delete.png");
+}
+
+.ic-table-choose_package {
+    background-image: url("../images/icons/choose_package.png");
+}
+
+.ic-table-hold {
+    background-image: url("../images/icons/hold_ico.png");
+}
+
+.ic-table-view_prof {
+    background-image: url("../images/icons/view-prof.png");
+}
+
+.color_label {
+    color: #A5001F;
+}
+
+/* ---------- MENU BUTTONS ---------- */
+.home-agent {
+    background-image: url("../images/icons/menu/home-agent.png");
+    color: rgb(15, 255, 15);
+}
+
+.menu-email {
+    background-image: url("../images/icons/menu/menu-email.png");
+}
+
+    .menu-email:hover {
+        background-image: url("../images/icons/menu/menu-email-over.png");
+    }
+
+
+.menu-email-special {
+    background-image: url("../images/icons/menu/menu-email-special.png");
+    color: #7fcdff;
+}
+
+.menu-settings {
+    background-image: url("../images/icons/menu/menu-settings.png");
+}
+
+    .menu-settings:hover {
+        background-image: url("../images/icons/menu/menu-settings-over.png");
+    }
+
+.menu-logoff {
+    background-image: url("../images/icons/menu/menu-logoff.png");
+}
+
+    .menu-logoff:hover {
+        background-image: url("../images/icons/menu/menu-logoff-over.png");
+    }
+
+.menu-user {
+    background-image: url("../images/icons/menu/menu-user.png");
+}
+
+
+
+
+
+/* ---------- FORMS ---------- */
+.data_form .form_row {
+    width: 100%;
+    display: block;
+    float: left: color: #2a2e36;
+    /*text-transform: uppercase;*/
+    margin: 0 0 0.3125em 0;
+    cursor: pointer;
+}
+
+.data_form label {
+    float: left;
+    width: 13%;
+    padding-top: 11px;
+}
+
+.data_form .form_row input[type="text"] {
+    border: 1px solid #d9dbdd;
+    padding: 1em 0.625em; /* 16/16 10/16 */
+    outline: none;
+    border-radius: 5px;
+    float: left;
+    width: 35%;
+}
+
+.data_form .form_row input[type="radio"] {
+    margin-top: 13px;
+}
+
+.data_form .clearfix {
+    padding-bottom: 41px;
+}
+
+.data_form .form_row .editor {
+    width: 100%
+}
+
+form label {
+    /*display: block;*/
+    color: #2a2e36;
+    /*text-transform: uppercase;
+	margin: 0 0 0.3125em 0;*/
+    cursor: pointer;
+}
+
+    form label.alt-label {
+        text-transform: none;
+    }
+
+form input[type="text"], input[type="password"], textarea {
+    border: 1px solid #d9dbdd;
+    padding: 10px 10px; /* 16/16 10/16 */
+    outline: none;
+    border-radius: 5px;
+}
+
+    form input[type="text"]:hover, input[type="password"]:hover, textarea:hover,
+    form input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
+        border: 1px solid #bbbdbe;
+    }
+
+form input[type="checkbox"], form input[type="radio"] {
+    margin-right: 2px; /* 10/12 */
+}
+
+form input[type="submit"] {
+    border: none;
+    cursor: pointer;
+    padding: 0.833em; /* 10/12 */
+    background-position: right center;
+    padding-right: 3em; /* 36/12 */
+    background-repeat: no-repeat;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+form input[type="reset"] {
+    border: none;
+    cursor: pointer;
+    padding: 0.833em; /* 10/12 */
+    background-position: right center;
+    padding-right: 3em; /* 36/12 */
+    background-repeat: no-repeat;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+form#search-form input {
+    border: none;
+    /* The inner text overflows on the BG image, so we're setting a right padding to stop that */
+    padding-right: 3em; /* 36/12 */
+}
+
+    form#search-form input:focus {
+        /* Same as .dark:hover */
+        background-color: #5d6677;
+        color: white;
+    }
+
+form p em {
+    margin-top: 0.833em; /* 10/12 */
+    display: block;
+}
+
+form p.form-error, form p.form-error label {
+    color: #cf4425;
+}
+
+    form p.form-error em {
+        background: transparent url('../images/icons/message-boxes/error.png') no-repeat left center;
+        padding-left: 2em; /* 24/12 */
+    }
+
+form input.error-input {
+    border: 1px solid #ff876f;
+}
+
+    form input.error-input:hover {
+        border: 1px solid #b03e27;
+    }
+
+/* Styling the HTML5 placeholders */
+/* So far they don't work in: IE, Opera 10 and below, Firefox 3.6 and below */
+::-webkit-input-placeholder {
+    color: #858d9c;
+}
+
+:-moz-placeholder {
+    color: #858d9c;
+}
+
+
+
+
+
+/* ---------- CONTENT BOXES ---------- */
+.information-box, .confirmation-box, .error-box, .warning-box {
+    padding: 0.833em 0.833em 0.833em 3em; /* 10/12 36/12 */
+    margin-bottom: 0.833em; /* 20/12 */
+}
+
+.information-box {
+    background: #e5f5f9 url('../images/icons/message-boxes/information.png') no-repeat 0.833em center;
+    border: 1px solid #cae0e5;
+    color: #5a9bab;
+}
+
+.confirmation-box {
+    background: #e7fae6 url('../images/icons/message-boxes/confirmation.png') no-repeat 0.833em center;
+    border: 1px solid #b7cbb6;
+    color: #52964f;
+}
+
+.error-box {
+    background: #fde8e4 url('../images/icons/message-boxes/error.png') no-repeat 0.833em center;
+    border: 1px solid #e6bbb3;
+    color: #cf4425;
+}
+
+.warning-box {
+    background: #fdf7e4 url('../images/icons/message-boxes/warning.png') no-repeat 0.833em center;
+    border: 1px solid #e5d9b2;
+    color: #b28a0b;
+}
+
+
+
+
+
+/* ---------- MENU ---------- */
+ul#nav {
+    list-style-type: none;
+}
+
+    ul#nav > li {
+        float: left;
+        margin-right: 0.312em; /* 5/16 */
+        position: relative;
+    }
+
+    ul#nav li:first-child {
+        margin-left: 0;
+    }
+
+    ul#nav li:hover ul {
+        left: 0; /* On hover, we make the submenu visible again */
+    }
+    /* Persistent hover state, exactly the same style as the inner anchor on hover (.dark:hover) */
+    ul#nav li:hover a {
+        background-color: #5d6677;
+        color: white;
+    }
+
+    ul#nav li.v-sep {
+        /*border-right: 1px solid #3f4551;*/
+        margin-right: 0.625em; /* 10/16 */
+        padding-right: 0.625em; /* 10/16 */
+    }
+
+    ul#nav li ul {
+        list-style-type: none;
+        position: absolute;
+        z-index: 999;
+        margin-top: -2px;
+        left: -9999px;
+    }
+
+        ul#nav li ul li a {
+            color: white;
+            padding: 0.833em 0 0.833em 3em;
+            border-top: 1px solid #6a7282;
+            /*background: #5d6677 url('../images/menu-indicator.png') no-repeat right center;*/
+            display: block;
+            width: 100%;
+            white-space: nowrap;
+        }
+
+        ul#nav li ul li:last-child a {
+            border-bottom-right-radius: 0.3125em; /* 5/16 */
+            border-bottom-left-radius: 0.3125em; /* 5/16 */
+            -moz-border-bottom-right-radius: 0.3125em; /* 5/16 */
+            -moz-border-bottom-left-radius: 0.3125em; /* 5/16 */
+            -webkit-border-bottom-right-radius: 0.3125em; /* 5/16 */
+            -webkit-border-bottom-left-radius: 0.3125em; /* 5/16 */
+        }
+
+        ul#nav li ul li a:hover {
+            background-color: #7a8497;
+        }
+
+
+
+
+
+/* ---------- TOP + HEADER ---------- */
+div#top-bar {
+    background-color: #01d8da;
+    padding: 0.625em 0; /* 10/16 */
+}
+
+div#header {
+    padding: 1.25em 0; /* 20/16 */
+}
+
+div#header-with-tabs {
+    padding: 1.25em 0 0 0; /* 20/16 */
+}
+
+div#login-intro {
+    background: transparent url('/images/login-icon.png') no-repeat left center;
+    padding: 0.312em 0 0.312em 3.125em;
+}
+
+    div#login-intro h1 {
+        text-transform: uppercase;
+        margin: 0.312em 0 0 0;
+    }
+
+    div#login-intro h5 {
+        color: #9498a1;
+    }
+
+a#company-branding img {
+    height: 39px;
+}
+
+a#company-branding-small img {
+    height: 50px;
+}
+
+
+
+
+
+/* ---------- TABS ---------- */
+ul#tabs {
+    list-style-type: none;
+}
+
+    ul#tabs li {
+        float: left;
+    }
+
+        ul#tabs li a {
+            border: 1px solid #eeefef;
+            border-bottom: none;
+            padding: 1.666em 0.833em; /* 20/12 10/12 */
+            margin: 0 0.416em -1px 0;
+            display: block;
+            color: #9498a1;
+        }
+
+            ul#tabs li a:hover {
+                color: #2a2e36;
+            }
+
+            ul#tabs li a.dashboard-tab {
+                background: transparent url('../images/tab-dashboard.png') no-repeat 0.833em center /* 10/12 */;
+                padding-left: 3em; /* 36/12 */
+            }
+
+            ul#tabs li a.active-tab, ul#tabs li a.active-tab:hover {
+                background-color: #f8f9fa;
+                font-weight: bold;
+                color: #2a2e36;
+            }
+
+
+
+
+
+
+
+/* ---------- TABLES ---------- 
+table {
+ width: 100%; margin-bottom: 1.25em;  }
+
+	table th {
+		background-color: #5d6677;
+		color: white;
+		text-transform: uppercase;
+		padding: 1.25em 0 1.25em 1.25em; 
+		border-left: 1px solid #747c8a;
+	}
+		
+	table tbody td {
+		padding: 0.833em 0 0.833em 1.25em; 
+		border-left: 1px solid white;
+		border-bottom: 1px solid #f8f9fa;
+	}*/
+
+/* Alternate table row 
+	table tbody tr:nth-child(odd) { background-color: #f8f9fa; }
+
+	 Push the first cell to the right so it doesn't stick to the table border 
+	table td:first-child, table th:first-child {
+		width: 4em 
+		text-align: center;
+		padding: 0;
+		border: none;
+		border-bottom: 1px solid #f8f9fa;
+	}
+	
+	table td:last-child, table th:last-child {
+		width: 7em; 
+		text-align: center;
+		padding: 0;
+	}
+	
+	table td.table-footer {
+		text-align: left;
+		vertical-align: middle;
+		padding-top: 1.25em 
+		border: none;
+	}
+	*/
+table {
+    width: 100%;
+    font-size: 14px;
+}
+
+a.table-actions-button {
+    width: 15px;
+    height: 14px;
+    display: inline-block;
+    background-position: center center;
+}
+
+
+
+
+
+/* ---------- LISTS ---------- */
+ol li, .regular-ul li {
+    margin-left: 1.25em; /* 20/16 */
+}
+
+ol, .regular-ul, .custom-ul {
+    margin-bottom: 1.25em; /* 20/16 */
+}
+
+.custom-ul {
+    list-style-type: none;
+}
+
+    .custom-ul li {
+        background: transparent url('../images/menu-dark-indicator.png') no-repeat left center;
+        padding-left: 1.25em /* 10/12 */;
+    }
+
+
+
+/* ---------- CONTENT ---------- */
+div#content {
+    background: #f8f9fa url('/images/artwork-pattern.png') repeat-x left bottom;
+    border: 1px solid #eeefef;
+    padding: 1.875em 0; /* 30/16 */
+}
+
+form#login-form {
+    width: 18.75em; /* 300/16 */
+    margin: 0 auto;
+}
+
+div.side-menu {
+    background: #DF0900;
+    border: 1px solid #eeefef;
+    width: 15%;
+    margin-bottom: 1em; /* 16/16 */
+    border-radius: 7px;
+}
+
+    div.side-menu h3 {
+        text-transform: uppercase;
+        font-weight: bold;
+        margin: 8px; /*1.25em;  15/12 */
+        color: white;
+    }
+
+    div.side-menu ul {
+        list-style-type: none;
+    }
+
+        div.side-menu ul li a {
+            padding: 0.833em 1.25em; /* 10/12 15/12 */
+            border-top: 1px solid #f8f9fa;
+            display: block;
+            background: white url('../images/menu-dark-indicator.png') no-repeat right center;
+        }
+
+            div.side-menu ul li a:hover {
+                background-color: #f8f9fa;
+            }
+
+div.side-content {
+    width: 83%; /* 100% - 15% for the side menu - 2% for the left margin */
+}
+
+div.content-module {
+    background: white;
+    margin-bottom: 1em; /* 16/16 */
+    border: 1px solid #eeefef;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+div.content-module-heading {
+    background: #DF0900;
+    cursor: pointer;
+}
+
+    div.content-module-heading h3 {
+        text-transform: uppercase;
+        color: white;
+        font-weight: bold;
+        margin: 8px; /* 15/12 */
+    }
+
+    div.content-module-heading span {
+        color: #969dac;
+        text-transform: uppercase;
+        margin: 1.5em; /* 15/10 */
+    }
+
+div.content-module-main {
+    padding: 1em; /* 16/16 */
+}
+
+
+
+
+
+/* ---------- FOOTER ---------- */
+div#footer {
+    text-align: center;
+    padding: 1.875em 0; /* 30/16 */
+}
+
+
+
+/* new */
+
+.profile_meter {
+    float: right;
+    width: 100px;
+    background-color: white;
+    height: 20px;
+    border: 1px solid #B6A2A2;
+    border-radius: 3px;
+}
+
+.button_template_red {
+    -moz-box-shadow: inset 0px 1px 0px 0px #cf866c;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #cf866c;
+    box-shadow: inset 0px 1px 0px 0px #cf866c;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #d0451b), color-stop(1, #bc3315));
+    background: -moz-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+    background: -webkit-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+    background: -o-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+    background: -ms-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+    background: linear-gradient(to bottom, #FF3A00 5%, #FF2E00 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d0451b', endColorstr='#bc3315',GradientType=0);
+    background-color: #d0451b;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #942911;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: arial;
+    font-size: 13px;
+    padding: 4px 6px;
+    text-decoration: none;
+    text-shadow: 3px 2px 9px #854629;
+}
+
+.button_template {
+    -moz-box-shadow: inset 0px 1px 0px 0px #cf866c;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #cf866c;
+    box-shadow: inset 0px 1px 0px 0px #cf866c;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #d0451b), color-stop(1, #bc3315));
+    background: -moz-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+    background: -webkit-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+    background: -o-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+    background: -ms-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+    background: linear-gradient(to bottom, #FC4B4B 5%, #FF2E00 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d0451b', endColorstr='#bc3315',GradientType=0);
+    background-color: #d0451b;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #942911;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: arial;
+    font-size: 13px;
+    padding: 4px 6px;
+    text-decoration: none;
+    text-shadow: 3px 2px 9px #854629;
+}
+
+    .button_template:hover {
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bc3315), color-stop(1, #d0451b));
+        background: -moz-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+        background: -webkit-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+        background: -o-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+        background: -ms-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+        background: linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bc3315', endColorstr='#d0451b',GradientType=0);
+        background-color: #bc3315;
+    }
+
+
+.meter {
+    float: right;
+    width: 180px;
+    height: 22px; /* Can be anything */
+    position: relative;
+    /*margin: 22px 1 18px 0;  Just for demo spacing */
+    background: #DDD9D9;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding: 1px;
+    -webkit-box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+    -moz-box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+    box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+}
+
+    .meter > span {
+        display: block;
+        height: 100%;
+        -webkit-border-top-right-radius: 5px;
+        -webkit-border-bottom-right-radius: 5px;
+        -moz-border-radius-topright: 5px;
+        -moz-border-radius-bottomright: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        -webkit-border-top-left-radius: 5px;
+        -webkit-border-bottom-left-radius: 5px;
+        -moz-border-radius-topleft: 5px;
+        -moz-border-radius-bottomleft: 5px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        -webkit-box-shadow: inset 0 2px 9px rgba(255,255,255,0.3), inset 0 -2px 6px rgba(0,0,0,0.4);
+        -moz-box-shadow: inset 0 2px 9px rgba(255,255,255,0.3), inset 0 -2px 6px rgba(0,0,0,0.4);
+        box-shadow: inset 0 2px 9px rgba(255,255,255,0.3), inset 0 -2px 6px rgba(0,0,0,0.4);
+        position: relative;
+        overflow: hidden;
+    }

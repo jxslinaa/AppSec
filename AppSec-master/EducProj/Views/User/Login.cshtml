@@ -1,0 +1,100 @@
+﻿@model AppSec.Models.Users
+@{
+    Layout = "";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>
+        YouthAtHeart :: Login
+    </title>
+
+    <!-- Bootstrap core CSS-->
+    <link href="~/Content/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Custom fonts for this template-->
+    <link href="~/Content/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css"/>
+    <!-- Custom styles for this template-->
+    <link href="~/Content/css/sb-admin-red.css" rel="stylesheet"/>
+    <style>
+        form p input[type="text"], form p input[type="password"], form p input[type="checkbox"], form p input[type="radio"] {
+            font-size: 1em;
+        }
+        form input[type="email"] {
+            border: 1px solid #d9dbdd;
+            padding: 10px 10px;
+            outline: none;
+            border-radius: 5px;
+        }
+        .full-width-input {
+            width: 95%;
+        }
+    </style>
+</head>
+<body>
+    <div id="top-bar">		
+        <div class="page-full-width">
+        </div>
+    </div>
+   
+
+    <div id="content">
+
+
+        <form action="~/User/Login" method="post" accept-charset="utf-8" id="login-form">
+
+            @{
+                if (!String.IsNullOrEmpty(ViewData["errorMsg"].ToString()))
+                {
+                    if (ViewData["errorMsg"].ToString() == "-NA-")
+                    {
+                        <div class="alert alert-success" role="alert">
+                            Login Successfull, Redirecting...
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="alert alert-warning" role="alert">
+                            @ViewData["errorMsg"].ToString()
+                        </div>
+
+                    }
+                }
+            }
+
+            <fieldset>
+
+                <p>
+                    <label for="login-username">Email</label>
+                    @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "round full-width-input", @type = "email", @required = "" } })
+                </p>
+                <p>
+                    <label for="login-password">password</label>
+                    <input type="password" name="Password" id="Password" class="round full-width-input">
+                </p>
+                <p></p>
+                <input type="submit" class="button round blue image-right ic-right-arrow" value="LOG IN">
+                <a href="~/user/signup" class="button round btn-primary image-right ic-right-arrow">Signup</a>
+
+            </fieldset>
+        </form>
+    </div>
+
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+<div id="footer">
+    <p>© Copyright @DateTime.Now.Year <a href="#">YouthAtwork</a>. All rights reserved.</p>
+   
+</div>
+
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="~/Content/vendor/jquery/jquery.min.js"></script>
+</body>
+</html>
+

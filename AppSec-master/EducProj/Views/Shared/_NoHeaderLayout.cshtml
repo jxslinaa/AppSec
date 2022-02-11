@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta Http-Equiv="Cache-Control" Content="no-cache">
+    <meta Http-Equiv="Pragma" Content="no-cache">
+    <meta Http-Equiv="Expires" Content="0">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <title>@ViewData["Title"] - @ViewBag.Title </title>
+    <environment include="Development">
+        <!-- Bootstrap core CSS-->
+        <link href="~/Content/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom fonts for this template-->
+        <link href="~/Content/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+        <!-- Custom styles for this template-->
+        <link href="~/Content/css/sb-admin.css" rel="stylesheet">
+    </environment>
+
+    <environment exclude="Development">
+        <!-- Bootstrap core CSS-->
+        <link href="~/Content/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom fonts for this template-->
+        <link href="~/Content/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+        <!-- Custom styles for this template-->
+        <link href="~/Content/css/sb-admin.css" rel="stylesheet">
+    </environment>
+
+
+    <script src="~/Content/vendor/jquery/jquery.min.js"></script>
+    <script src="~/Content/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</head>
+<body id="page-top" style='-webkit-font-smoothing: subpixel-antialiased;-webkit-font-smoothing: antialiased;' class="sidebar-toggled">
+    <nav class="navbar navbar-expand navbar-dark  static-top" style="background-color: #0f94b2  !important;box-shadow: 0 5px 5px rgba(0,0,0,0.15);">
+
+
+        <!-- Navbar Search -->
+        <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0"></form>
+        <!-- Navbar -->
+
+    </nav>
+    <div id="wrapper">
+        <!-- Sidebar -->
+
+        <div id="content-wrapper">
+            @RenderBody()
+        </div>
+    </div>
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <script src="~/Content/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="~/Content/js/sb-admin.js"></script>
+    @RenderSection("Scripts", required: false)
+    <script type='text/javascript' src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LeH9WceAAAAAJzLfWpBnctn6aTQyTLgngBIXmQ9&trustedtypes=true"></script>
+</body>
+</html>

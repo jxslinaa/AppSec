@@ -1,0 +1,367 @@
+﻿@model AppSec.Models.Users
+
+@{ ViewData["Title"] = "Signup Account";
+    Layout = "_NoHeaderLayout"; }
+<div id="content-wrapper">
+    <div class="container-fluid">
+        <!-- Breadcrumbs-->
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card ">
+                    <div class="card-header  panel-header">
+                        Register
+                    </div>
+
+                    <div class="card-body" id="content" style="background: #f8f9fa ; border: 1px solid #eeefef;">
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                            </div>
+                            <div class="panel-body">
+                              
+                                <div class="col-sm-9 p-0 m-0">
+
+                                    @{ if (!String.IsNullOrEmpty(ViewData["errorMsg"].ToString()))
+                                        {
+                                            if (ViewData["errorMsg"].ToString() == "-NA-")
+                                            {
+                                <div class="alert alert-success" role="alert">
+                                    Registration Successfull, Click <a href="../User/login">login</a> to continue
+                                </div> }
+                            else
+                            {
+                                <div class="alert alert-warning" role="alert">
+                                    @ViewData["errorMsg"].ToString()
+                                </div> }
+                        } }
+                                    <div class="row mt-3">
+
+                                        <div class="col-sm-6">
+                                            <div class="form-group ">
+                                                <label for="FirstName" class=" control-label col-sm-4 float-left">First Name<span class="text-danger pl-1">*</span> </label>
+                                                <input type="text" name="FirstName" maxlength="70" class="form-control FirstName col-sm-8 float-left" required placeholder="First Name" value="@Model.FirstName" />
+
+
+
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6">
+                                            <div class="form-group ">
+                                                <label for="LastName" class="control-label col-sm-4 float-left">Last Name<span class="text-danger pl-1">*</span></label>
+                                                <input type="text" name="LastName" maxlength="70" class="form-control LastName col-sm-8 float-left" placeholder="Last Name" value="@Model.LastName" />
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col-sm-6">
+                                            <div class="form-group ">
+                                                <label for="MobileNumber" class="control-label col-sm-4 float-left">Mobile Number<span class="text-danger pl-1">*</span></label>
+                                                <input type="text" name="MobileNumber" maxlength="15" class="MobileNumber form-control  col-sm-8 float-left" placeholder="Mobile Number" value="@Model.MobileNumber" />
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group ">
+                                                <label for="Emails" class="control-label col-sm-4 float-left">Email<span class="text-danger pl-1">*</span></label>
+                                                <input type="email" id="Emails" name="Email" placeholder="Email" maxlength="250" autocomplete="new" class="emailAddress col-sm-8 float-left form-control" required value="@Model.Email" />
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row mt-4">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="Password" class="control-label col-sm-4 float-left">Password<span class="text-danger pl-1">*</span></label>
+                                                <input type="password" minlength="12" autocomplete="off" name="Password" maxlength="22" class="password form-control col-sm-8 float-left" placeholder="Password" required />
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="c_password" class="control-label col-sm-4 float-left">Confirm Password<span class="text-danger pl-1">*</span></label>
+                                                <input type="password" minlength="12" autocomplete="off" name="c_password" maxlength="22" class="c_password form-control col-sm-8 float-left" placeholder="Password" required />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-4">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="DOB" class="control-label col-sm-4 float-left">DOB<span class="text-danger pl-1">*</span></label>
+                                                <input type="date" minlength="12" autocomplete="off" name="DOB" value="@Model.DOB" max="@(DateTime.Today.AddYears(-18).ToString("yyyy-MM-dd"))" class="DOB form-control col-sm-8 float-left" placeholder="Password" required />
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-sm-6">
+                                            <div>
+                                                <label for="ProfilePhotoFile" class="control-label col-sm-4 float-left">Photo<span class="text-danger pl-1">*</span></label>
+                                                <input type="file" name="ProfilePhotoFile" class="ProfilePhotoFile col-sm-8 float-left" accept="image/*" required />
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="row mt-4">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="CardNumber" class="control-label col-sm-4 float-left">Card Number<span class="text-danger pl-1">*</span></label>
+                                                <input type="text" minlength="12" autocomplete="off" name="CardNumber" maxlength="22" class="CardNumber form-control col-sm-8 float-left" placeholder="Card Number" required />
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="CardExpiryDate" class="control-label col-sm-4 float-left">Expiry Date<span class="text-danger pl-1">*</span></label>
+                                                <input type="text" minlength="12" autocomplete="off" name="CardExpiryDate" maxlength="22" class="CardExpiryDate form-control col-sm-8 float-left" placeholder="Card Expiry Date" required />
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6 mt-4">
+                                            <div class="form-group">
+                                                <label for="CardCVV" class="control-label col-sm-4 float-left">CVV<span class="text-danger pl-1">*</span></label>
+                                                <input type="text" minlength="12" autocomplete="off" name="CardCVV" maxlength="22" class="CardCVV form-control col-sm-8 float-left" placeholder="Cvv" required />
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 mt-4">
+                                            <div class="form-group">
+                                                <label for="NameOnCard" class="control-label col-sm-4 float-left">Name On Card<span class="text-danger pl-1">*</span></label>
+                                                <input type="text" autocomplete="off" name="NameOnCard" maxlength="22" class="NameOnCard form-control col-sm-8 float-left" placeholder="Name on card" required />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" id="hdnGoogleRecaptcha" required><br />
+                                    <div class="FormErrMsg ml-3 mt-3 text-danger"></div>
+
+                                    <div class="row mt-5 ml-0 mb-3">
+                                        <div class="col-sm-12">
+                                            <a href="../User/Login" value="Login" class="btn  btn-link mr-2 ml-0 float-left">Login</a>
+
+                                            <input type="reset" value="Reset" class="btn btn-secondary mr-2 float-left" />
+                                            <button type="button" onclick="submitForm()" class="btnregister btn btn-primary mr-2 float-left">
+                                                <i class="fa fa-spinner tryregister fa-spin"  style="font-size:14px;display:none"></i>
+                                            Signup</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<footer class="sticky-footer" style="width:100% !important">
+    <div class="container my-auto">
+        <div class="copyright text-center my-auto">
+            <span>Copyright ©  @DateTime.Now.Year</span>
+        </div>
+    </div>
+</footer>
+<script>
+
+
+    $('form').submit(function (e) {
+     
+    });
+
+</script>
+
+<script>
+    function submitForm() {
+        var firstName = $(".FirstName").val();
+        var lastName = $(".LastName").val();
+        var mobileNumber = $(".MobileNumber").val();
+        var email = $(".emailAddress").val();
+        var password = $(".password").val();
+        var c_password = $(".c_password").val();
+        var dob = $(".DOB").val();
+        var cardNumber = $(".CardNumber").val();
+        var CardExpiryDate = $(".CardExpiryDate").val();
+        var cardCvv = $(".CardCVV").val();
+        var NameOnCard = $(".NameOnCard").val();
+        var fileInp = $('input[type=file]')[0].files[0];
+        var Regesx = '/^[a-zA-Z]/';
+        var condition = false;
+        var emailRegex = /^(([^<>()[\]\\.,;:\s@@\"]+(\.[^<>()[\]\\.,;:\s@@\"]+)*)|(\".+\"))@@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    
+        if (firstName.trim() === "") {
+            $(".FormErrMsg").html("Firstname is required."); condition = false;
+        } else if (!firstName.match(/^[A-Za-z]+$/)) {
+            $(".FormErrMsg").html("Alphabets only."); condition = false;
+        } else if (lastName.trim() === "") {
+            $(".FormErrMsg").html("LastName is required."); condition = false;
+        } else if (!lastName.match(/^[A-Za-z]+$/)) {
+            $(".FormErrMsg").html("Alphabets only."); condition = false;
+        } else if (mobileNumber.trim() === "") {
+            $(".FormErrMsg").html("Mobilenumber is required."); condition = false;
+        } else if (email.trim() === "") {
+            $(".FormErrMsg").html("Email is required."); condition = false;
+        } else if (!email.match(emailRegex)) {
+            $(".FormErrMsg").html("Email error"); condition = false;
+        }else if (password.trim() === "") {
+            $(".FormErrMsg").html("Password required"); condition = false;
+        }  else if (c_password.trim() === "") {
+            $(".FormErrMsg").html("Confirm password required"); condition = false;
+        }
+        else if (password !== c_password) {
+            $(".FormErrMsg").html("Passwords not equal"); condition = false;
+        } else if (validatePassword(password)) {
+            $(".FormErrMsg").html("Strong password required{ Must contains 2 upper and  2 lower case and  2 number and atleast one special character}"); condition = false;
+        }
+        else if (dob.trim() === "") {
+            $(".FormErrMsg").html("DOB required"); condition = false;
+        }
+        else if (typeof fileInp === "undefined") {
+            $(".FormErrMsg").html("Profile picture required"); condition = false;
+        }else if (cardNumber.trim() === "") {
+            $(".FormErrMsg").html("Cardnumber required"); condition = false;
+        } else if (CardExpiryDate.trim() === "") {
+            $(".FormErrMsg").html("CardExpiryDate required"); condition = false;
+        } else if (NameOnCard.trim() === "") {
+            $(".FormErrMsg").html("Name on card required"); condition = false;
+        } else if (isNaN(cardNumber.trim()) !== false) {
+            $(".FormErrMsg").html("Invalid card number."); condition = false;
+        } else if (cardNumber.trim().length !== 16) {
+            $(".FormErrMsg").html("Invalid card number."); condition = false;
+        } else if (cardCvv.trim() === "") {
+            $(".FormErrMsg").html("card cvv required"); condition = false;
+        } else if (cardCvv.trim().length < 3) {
+            $(".FormErrMsg").html("Invalid cvv."); condition = false;
+        } else if (CardExpiryDate.trim() === "") {
+            $(".FormErrMsg").html("ExpiryDate is required."); condition = false;
+        } else if (CardExpiryDate.trim().length !== 7) {
+            $(".FormErrMsg").html("Invalid expiry date."); condition = false;
+        } else if (CardExpiryDate.trim().length !== 7) {
+            $(".FormErrMsg").html("Invalid expiry date."); condition = false;
+        } else {
+            $(".FormErrMsg").html("");
+            condition = true;
+        }
+      
+        if (condition) {
+            $(".tryregister").show();
+            $(".btnregister").attr("disabled","disabled");
+            var userDetails = new FormData();
+            userDetails.append("FirstName", firstName);
+            userDetails.append("LastName", lastName);
+            userDetails.append("Password", password);
+            userDetails.append("c_password", c_password);
+            userDetails.append("DOB", dob);
+            userDetails.append("Email", email);
+            userDetails.append("MobileNumber", mobileNumber);
+            userDetails.append("CardNumber", cardNumber);
+            userDetails.append("CardExpiryDate", CardExpiryDate);
+            userDetails.append("CardCVV", cardCvv);
+            userDetails.append("NameOnCard", NameOnCard);
+            userDetails.append("Fileinps", fileInp);
+            grecaptcha.ready(function () {
+                grecaptcha.execute('6LeH9WceAAAAAJzLfWpBnctn6aTQyTLgngBIXmQ9', { action: 'registration' }).then(function (token) {
+
+                    $.getJSON("/User/VerifyCaptcha?token=" + token,
+                        function (data) {
+                            if (data) {
+                                $.ajax({
+                                    type: "POST",
+                                    url: "../User/SignUp",
+                                    processData: false,
+                                    contentType: false,
+                                    data: userDetails,
+                                    success: function (resultData) {
+                                        if (resultData.status) {
+                                            alert(resultData.message);
+                                            window.location.href = "../User/Login";
+                                        } else {
+                                            alert(resultData.message);
+                                            $(".tryregister").hide();
+                                            $(".btnregister").removeAttr("disabled");
+                                        }
+                                    }
+                                });
+                            }
+                        });
+                });
+            });
+
+        }
+
+    }
+    function validatePassword(password) {
+        var upper = 0, lower = 0, number = 0, special = 0;
+        for (var i = 0; i < password.length; i++) {
+            if (password[i] >= "A" && password[i] <= "Z") upper++;
+            else if (password[i] >= "a" && password[i] <= "z") lower++;
+            else if (password[i] >= "0" && password[i] <= "9") number++;
+            else special++;
+        }
+        if (upper < 2 || lower < 2 || number < 2 || special < 1) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    $(document).ready(function () {
+        $(":input").inputmask();
+
+        $(".MobileNumber").inputmask({
+            mask: '+659999999999',
+            placeholder: '    ',
+            showMaskOnHover: true,
+            showMaskOnFocus: true,
+            onBeforePaste: function (pastedValue, opts) {
+                var processedValue = pastedValue;
+                return processedValue;
+            }
+        });
+
+
+        $(".CardNumber").inputmask({
+            mask: '9999999999999999',
+            placeholder: '                ',
+            showMaskOnHover: true,
+            showMaskOnFocus: true,
+            onBeforePaste: function (pastedValue, opts) {
+                var processedValue = pastedValue;
+
+                //do something with it
+
+                return processedValue;
+            }
+        });
+        $(".CardCVV").inputmask({
+            mask: '9999',
+            placeholder: '    ',
+            showMaskOnHover: true,
+            showMaskOnFocus: true,
+            onBeforePaste: function (pastedValue, opts) {
+                var processedValue = pastedValue;
+                return processedValue;
+            }
+        });
+        $(".CardExpiryDate").inputmask({
+            mask: '99/9999',
+            placeholder: '  /    ',
+            showMaskOnHover: true,
+            showMaskOnFocus: false,
+            onBeforePaste: function (pastedValue, opts) {
+                var processedValue = pastedValue;
+
+                //do something with it
+
+                return processedValue;
+            }
+        });
+
+    });
+
+</script>
